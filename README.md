@@ -4,13 +4,13 @@ Este é um projeto full-stack completo que serve como um blueprint para aplicaç
 
 ## Tabela de Conteúdos
 
-1.  [Tecnologias Utilizadas](https://www.google.com/search?q=%23tecnologias-utilizadas)
-2.  [Estrutura do Projeto](https://www.google.com/search?q=%23estrutura-do-projeto)
-3.  [Pré-requisitos](https://www.google.com/search?q=%23pr%C3%A9-requisitos)
-4.  [Guia de Instalação e Setup](https://www.google.com/search?q=%23guia-de-instala%C3%A7%C3%A3o-e-setup)
-5.  [Como Executar a Aplicação](https://www.google.com/search?q=%23como-executar-a-aplica%C3%A7%C3%A3o)
-6.  [Como Executar os Testes](https://www.google.com/search?q=%23como-executar-os-testes)
-7.  [Autor](https://www.google.com/search?q=%23autor)
+1.  [Tecnologias Utilizadas](#tecnologias-utilizadas)
+2.  [Estrutura do Projeto](#estrutura-do-projeto)
+3.  [Pré-requisitos](#pré-requisitos)
+4.  [Guia de Instalação e Setup](#guia-de-instalação-e-setup)
+5.  [Como Executar a Aplicação](#como-executar-a-aplicação)
+6.  [Como Executar os Testes](#como-executar-os-testes)
+7.  [Autor](#autor)
 
 ## Tecnologias Utilizadas
 
