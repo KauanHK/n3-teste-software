@@ -1,0 +1,55 @@
+# Python / FastAPI Backend
+# Ignora o ambiente virtual, que pode ser recriado a partir do requirements.txt
+venv/
+.venv/
+
+# Ignora os caches de bytecode do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignora caches de ferramentas de teste e linting
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+.env
+
+# Ignora bancos de dados SQLite locais, se usados para testes
+*.sqlite3
+*.db
+
+# --- Node.js / React Frontend ---
+# Ignora a pasta de dependências, que é massiva e recriada com 'npm install'
+node_modules/
+
+# Ignora a pasta de build de produção
+dist/
+
+# Ignora arquivos de log e debug do npm/yarn
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignora arquivos de ambiente local do frontend
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --- k6 Load Testing ---
+# Ignora o binário do k6 customizado que compilamos. Apenas o script .js deve ser versionado.
+k6
+
+# --- Docker ---
+# Ignora pastas de dados que podem ser criadas localmente pelos volumes
+influxdb_data/
+grafana_data/
+
+# --- IDEs e Sistema Operacional ---
+# Ignora arquivos de configuração de editores de código e do SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

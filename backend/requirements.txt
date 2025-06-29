@@ -1,0 +1,15 @@
+fastapi[all]
+fastapi[all]
+sqlalchemy
+asyncpg
+pydantic[email]
+pydantic-settings
+pytz
+passlib
+bcrypt
+pytest
+pytest-asyncio
+httpx
+faker
+aiosqlite
+argon2-cffi
