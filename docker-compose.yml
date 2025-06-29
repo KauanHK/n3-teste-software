@@ -1,6 +1,8 @@
+# projeto-python-completo/docker-compose.yml (Versão Final Unificada)
 version: '3.8'
 
 services:
+  # --- Serviço do Banco de Dados Principal ---
   db:
     image: postgres:15
     container_name: postgres_db
@@ -12,6 +14,36 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped # Boa prática: reinicia o container se ele parar inesperadamente
 
+  # --- Serviços de Monitoramento (k6) ---
+  influxdb:
+    image: influxdb:1.8
+    container_name: influxdb
+    ports:
+      - "8086:8086"
+    volumes:
+      - influxdb_data:/var/lib/influxdb
+    environment:
+      - INFLUXDB_DB=k6
+    restart: unless-stopped
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana_data:/var/lib/grafana
+    environment:
+      - GF_SECURITY_ADMIN_USER=admin
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    depends_on:
+      - influxdb
+    restart: unless-stopped
+
+# Todos os volumes necessários para persistir os dados
 volumes:
   postgres_data:
+  influxdb_data:
+  grafana_data:
