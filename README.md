@@ -10,7 +10,6 @@ Este é um projeto full-stack completo que serve como um blueprint para aplicaç
 4.  [Guia de Instalação e Setup](#guia-de-instalação-e-setup)
 5.  [Como Executar a Aplicação](#como-executar-a-aplicação)
 6.  [Como Executar os Testes](#como-executar-os-testes)
-7.  [Autor](#autor)
 
 ## Tecnologias Utilizadas
 
